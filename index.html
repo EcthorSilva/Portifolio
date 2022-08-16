@@ -18,6 +18,48 @@
 				</video>
 			</div>
 		</div>
+		<script type="text/javascript">
+
+			// Load correct video
+			let video = document.querySelector('#video-viewport video')
+			let source = document.querySelector('#video-viewport source')
+			var Today = new Date();
+			var H = Today.getHours();
+			
+			/* Trabalhando */
+			if (H >= 9 && H < 17) {
+				source.src='video/working.mp4'
+				video.muted = true
+				video.autoplay =true 
+				video.controls = false;
+				video.load()
+				video.play();
+			}
+			/* Estudando */
+			else if (H >= 17  && H < 19) {
+				video.muted = true;
+				video.autoplay = true;
+				video.controls = false;
+				video.load();
+				video.play();
+				source.src="video/studying.mp4"
+				console.log("studying");
+				console.log(source.src)
+			
+			}
+			/* Jogadno e/ou Dormindo */
+			else if (H >= 19  && H < 24) {
+				video.muted = true;
+				video.autoplay = true;
+				video.controls = false;
+				video.load();
+				video.play();
+				source.src="video/sleeping.mp4"
+				console.log("sleeping");
+				console.log(source.src)
+			
+			}
+		</script>
         <!-- HEADER -->
         <header class="header">
             <div class="inner">
