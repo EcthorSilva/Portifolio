@@ -58,13 +58,13 @@ img, video {
 
 /* Typography */
 h1 {
-    font-family: 'Neue Machina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     font-weight: 300;
 }
 h2 {
     margin: 0 0 .6em 0;
-    font-family: 'Neue Machina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     font-weight: 300;
     line-height: 1em;
@@ -80,7 +80,7 @@ h3 {
     padding-top: 4px;
     font-weight: 400;
     margin: 0 0 0.4em 0;
-    font-family: 'Neue Machina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 p {
     font-size: 1em;
@@ -258,51 +258,13 @@ nav.links a:hover {
     padding: 0px 90px 100px;
     min-height: calc(100vh - 107px);
 }
-.intro.default {
-    flex-direction: row;
-}
-.intro .image {
-    width: 41%;
-    position: relative;
-    display: block;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    position: relative;
-}
-.intro img {
-    width: 400px;
-    max-width: 100%;
-    transition: 0.6s ease all;
-    border-radius: 4px;
-    transform: rotate(-6deg);
-    position: relative;
-    mix-blend-mode: soft-light;
-}
-.intro .image::before {
-    content: ' ';
-    display: block;
-    width: 180px;
-    height: 70px;
-    background: url('../img/tape2.png');
-    position: absolute;
-    z-index: 1;
-    background-size: 100% 100%;
-    background-position: center;
-    top: -40px;
-    right: 90px;
-    transform: rotate(25deg);
-    opacity: 0.6;
-}
-
 .intro .copy {
     width: calc(50% - 12px);
     display: flex;
     justify-content: end;
 }
 .intro .copy-inner {
-    max-width: 615px;
+    max-width: 620px;
 }
 .intro h1 {
     margin: 0.6em 0;
@@ -310,7 +272,7 @@ nav.links a:hover {
     line-height: 1em;
 }
 .intro p {
-    font-family: 'Neue Machina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.64em;
     font-weight: 300;
 }
@@ -380,5 +342,83 @@ nav.links a:hover {
 @media screen and (max-width:1200px) {
     .sub-footer .inner {
         padding: 30px 7%;
+    }
+}
+
+/* Tiles */
+.tiles {
+    max-width: 1900px;
+    margin: auto;
+    padding: 50px 90px 50px;
+}
+.tile {
+    background: rgb(255 255 255 / 5%);
+    border-radius: 4px;
+    padding: 50px 47px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.tile p {
+    margin: 30px auto 10px;
+    max-width: 930px;
+}
+.tile.tile-tile {
+    overflow: hidden;
+    position: relative;
+    padding: 90px 30px;
+    background: transparent;
+    mix-blend-mode: screen;
+}
+.tile-git {
+    padding: 10px 10px;
+}
+
+@media screen and (max-width:1440px) {
+    .tile {
+        padding: 50px 36px 40px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .tiles {
+        padding: 70px 7% 40px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .tile {
+        padding: 40px 31px;
+    }
+    .tile-tile_background {
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 840px) {
+    .tiles .grid .tile {
+        padding: 40px 31px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .tiles.icon-tiles .grid .tile {
+        padding: 40px 31px 40px 127px;
+    }
+    .tile img.icon {
+        position: absolute;
+        left: 32px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .tiles {
+        padding: 30px 2.5%
+    }
+    .tiles .grid .tile {
+        padding: 33px 22px;
+    }
+    .tiles.icon-tiles .grid .tile {
+        padding: 33px 22px;
+        padding-left: 84px;
+    }
+    .tile img.icon {
+        left: 25px;
+        height: 30px;
+        top: 35px;
     }
 }
