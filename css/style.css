@@ -65,7 +65,7 @@ h1 {
 h2 {
     margin: 0 0 .6em 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 300;
     line-height: 1em;
 }
@@ -420,5 +420,150 @@ nav.links a:hover {
         left: 25px;
         height: 30px;
         top: 35px;
+    }
+}
+
+/* Filtro do SPARK AR*/
+.main-filter{
+    position: relative; 
+    height: 402.66px;
+    width: 197.33px;
+    margin-top: 30px;
+}
+.content2{
+    /*
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    width: 264px;
+    */
+}
+.video-content{
+    padding-top: 29px;
+    padding-left: 8.65px;
+    position: absolute;
+    z-index: 1;
+}
+.info{
+    min-width: 0;
+    min-height: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+    padding-top: 33.66px;
+    padding-left: 10.66px;
+    width: 176px;
+    /* height: 12%; */
+}
+.image-content{
+    border-radius: 1000px;
+    padding: 13px 7px 9px 8px;
+}
+.img{
+    border-radius: 15px;
+}
+.info-name{
+    min-width: 0;
+    min-height: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+
+}
+.filter-name{
+    color: #fff;
+    font-size: .6875rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.name-position{
+    min-width: 0;
+    min-height: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.creator-name{
+    color: #fff;
+    font-size: .5625rem;
+}
+.moldura{
+    align-items: stretch;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Grids */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.grid.col-1 .col {
+    width: calc(100% - 12px);
+    margin: 0 6px;
+}
+.grid.col-2 .col {
+    width: calc(50% - 12px);
+    margin: 0 6px;
+}
+.grid.col-3 .col {
+    width: calc(33.33% - 12px);
+    margin: 0 6px;
+}
+@media screen and (max-width:700px) {
+    .grid-2 {
+        margin: 0px;
+        display: block;
+    }
+    .grid-2 .col {
+        width: 100%;
+        padding: 0px;
+    }
+}
+@media screen and (max-width:840px) {
+    .grid.col-3 .col {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+}
+
+/* Content */
+.content {
+    margin: auto;
+    padding: 70px 90px 70px;
+}
+.content.columns .grid {
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.content.columns .copy-inner {
+    max-width: 615px;
+}
+@media screen and (max-width:1440px) {
+    .content.columns p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .content {
+        padding: 40px 7%;
+    }
+}
+@media screen and (max-width:850px) {
+    .content.columns .grid {
+        margin-bottom: 80px;
+        padding-top: 90px;
+    }
+    .content.columns .grid .col {
+        width: 100%;
+        padding: 0 !important;
     }
 }
