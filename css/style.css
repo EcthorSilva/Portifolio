@@ -11,7 +11,6 @@
 *::-webkit-scrollbar-thumb {
     background-color: #252525;
 }
-
 /* Global */
 *, *:before, *:after {
     box-sizing: border-box;
@@ -254,7 +253,7 @@ nav.links a:hover {
     display: flex;
     align-items: flex-end;
     max-width: 1900px;
-    margin: 0 auto 210px;
+    /* margin: 0 auto 210px; */
     padding: 0px 90px 100px;
     min-height: calc(100vh - 107px);
 }
@@ -282,7 +281,7 @@ nav.links a:hover {
 }
 @media screen and (max-width: 1440px) {
     .intro p:first-of-type {
-        font-size: 1.68em;
+        font-size: 1.4em;
     }
 }
 @media screen and (max-width:1200px) {
@@ -315,7 +314,7 @@ nav.links a:hover {
 /* Footer */
 .footer {
     padding: 1px 0px 0;
-    margin-top: 23px;
+    margin-top: 50px;
 }
 .footer-cta {
     padding: 50px 0 156px;
@@ -429,14 +428,6 @@ nav.links a:hover {
     height: 402.66px;
     width: 197.33px;
     margin-top: 30px;
-}
-.content2{
-    /*
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: absolute;
-    width: 264px;
-    */
 }
 .video-content{
     padding-top: 29px;

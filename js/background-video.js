@@ -17,7 +17,7 @@ if (D >= 1 && D <= 5) {
         video.controls = false;
         video.load()
         video.play();
-        source.src = "video/working.mp4"
+        source.src = "video/blank.mp4"
         console.log("Working");
         console.log(source.src)
     }
@@ -53,7 +53,7 @@ else {
     video.controls = false;
     video.load();
     video.play();
-    source.src = "video/working.mp4"
+    source.src = "video/blank.mp4"
     console.log("Playing");
     console.log(source.src)
 }
