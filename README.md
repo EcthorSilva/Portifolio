@@ -1,6 +1,8 @@
 # portifolio
 
-Já faz algum tempo que ando querendo atualizar meu portifolio de desenvolvedor web, por este motivo estou iniciando este novo projeto.
+###### Já faz algum tempo que ando querendo atualizar meu portifolio de desenvolvedor web, por este motivo estou iniciando este novo projeto.
+
+Ainda estou construindo este portifolio, aos poucos estou adicionando coisas e corrigindo alguns aspectos da resposnividade deste site em telas menores.
 
 ### Updates
 
