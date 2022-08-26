@@ -145,19 +145,31 @@ a {
 
 #video-viewport video {
     max-width: none;
+    width: 1920px;
+    height: 1080px;
 }
-#debug {
-    position: absolute;
-    top: 30%;
-    z-index: 100;
-    color: #fff;
-    font-size: 12pt;
-    opacity: 0;
-    left: 40px;
+
+@media screen and (max-width:2560px) and (max-height:900px){
+    #video-viewport video{
+        max-width: none;
+        width: 2560px;
+        height: 937px;
+    }
 }
-#debug p {
-    font-size: 14px;
-    margin: 0;
+
+@media screen and (max-width:1600px) and (max-height:900px){
+    #video-viewport video{
+        max-width: none;
+        width: 1600px;
+        height: 900px;
+    }
+}
+@media screen and (max-width: 1366px) and (max-height: 768px){
+    #video-viewport video{
+        max-width: none;
+        width: 1366px;
+        height: 768px;
+    }
 }
 
 /* Main */
