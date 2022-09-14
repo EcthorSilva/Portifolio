@@ -23,7 +23,7 @@
         <!-- HEADER -->
         <header class="header">
             <div class="inner">
-				<a href="/" class="logo">&nbsp;</a>
+				<a onclick="incrementClick()" class="logo">&nbsp;</a>
                 <nav class="links">
                     <a href="mailto:EcthorSilva@outlook.com">EcthorSilva@outlook.com</a>
                     <a href="https://www.linkedin.com/in/ecthor-silva-b7b5b61a5/" target="_blank">LinkedIn</a>
@@ -34,8 +34,8 @@
         </header>
         <!-- MAIN -->
         <main class="main">
-            <!-- Intro -->
-            <div class="intro">
+			<!-- Intro -->
+            <div class="intro" id="intro">
                 <div class="copy">
                     <div class="copy-inner">
                         <h1>Hi, I'm Ecthor</h1>
@@ -43,6 +43,29 @@
                     </div>
                 </div>
             </div>
+			<!-- Easter Egg -->
+			<div class="easter-egg" id="easteregg">
+				<section class="window-section">
+					<div class="window">
+						<header class="window-header">
+							<nav class="window-controls">
+								<span class="control-item control-minimize js-minimize">‒</span>
+								<span class="control-item control-maximize js-maximize">□</span>
+								<span class="control-item control-close js-close">˟</span>
+							</nav>
+						</header>
+						<main class="window-content">
+							<div class="window-cursor">
+								<span class="i-cursor-indicator">></span><span class="i-cursor-underscore"></span>
+								<input type="text" class="window-input js-prompt-input" id='console' />
+							</div>
+						</main>
+					</div>
+					<div class="prompt-shortcut i-prompt hidden js-open"></div>
+				</section>
+			</div>
+			<!-- Easter Egg Script -->
+			<script src="js/easter-egg.js"></script>
 			<!-- SPARK AR SECTION -->
 			<section class="content columns">
 				<div class="grid col-2">
@@ -104,12 +127,17 @@
 						</div>
 						<div style="display: inline_block">
 							<p class="small">Linguagens e tecnologias que estudo</p>
-							<img aling="center" alt="HTML5" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
-							<img aling="center" alt="CSS3" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
+							<img aling="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+							<img aling="center" alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 							<img aling="center" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-							<img aling="center" alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+							<img aling="center" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 							<img aling="center" alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
+							<br>
+							<img aling="center" alt="JQuery" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
+							<img aling="center" alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
 							<img aling="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
+							<img aling="center" alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
+							<img aling="center" alt="Github" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
 						</div>
 						<br>
 						<details>
