@@ -13,4 +13,4 @@ Ainda estou construindo este portifolio, aos poucos estou adicionando coisas e c
 - Criei uma sessão para expor um dos meus filtros para o instagram criado no Spark AR Studio em parceria com um grande amigo Daniel;
 - Fiz algumas pequenas correções na exibição da sessão intro em tamanhos de tela com até 1440px, além da diminuição do espaço entre a sessão intro e as demais para se igualar a sessão spark ar e rodapé;
 - Fiz algumas correções na visualização do background video em diferentes formatos de tela;
-- Criei uma pagina para o Erro 404, caso aconteça o usuario poderá voltar para a pagina principal ou reportar um problema para mim.
+- Easter Egg adicionado a pagina principal.
