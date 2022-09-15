@@ -11,8 +11,11 @@
 *::-webkit-scrollbar-thumb {
     background-color: #252525;
 }
+
 /* Global */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 html {
@@ -20,7 +23,8 @@ html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
-html, body {
+html,
+body {
     margin: 0px;
     color: white;
     width: 100%;
@@ -43,7 +47,8 @@ hr {
     border-right: 0px;
     border-left: 0;
 }
-img, video {
+img,
+video {
     max-width: 100%;
 }
 .center {
@@ -133,39 +138,36 @@ a {
     object-fit: cover;
     position: fixed;
     z-index: -1;
-    opacity: 0.5; 
+    opacity: 0.5;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 #video-viewport {
     position: absolute;
     top: 0;
     overflow: hidden;
 }
-
 #video-viewport video {
     max-width: none;
     width: 1920px;
     height: 1080px;
 }
-
-@media screen and (max-width:2560px) and (max-height:900px){
-    #video-viewport video{
+@media screen and (max-width:2560px) and (max-height:900px) {
+    #video-viewport video {
         max-width: none;
         width: 2560px;
         height: 937px;
     }
 }
-
-@media screen and (max-width:1600px) and (max-height:900px){
-    #video-viewport video{
+@media screen and (max-width:1600px) and (max-height:900px) {
+    #video-viewport video {
         max-width: none;
         width: 1600px;
         height: 900px;
     }
 }
-@media screen and (max-width: 1366px) and (max-height: 768px){
-    #video-viewport video{
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    #video-viewport video {
         max-width: none;
         width: 1366px;
         height: 768px;
@@ -438,19 +440,19 @@ nav.links a:hover {
 }
 
 /* Filtro do SPARK AR*/
-.main-filter{
-    position: relative; 
+.main-filter {
+    position: relative;
     height: 402.66px;
     width: 197.33px;
     margin-top: 30px;
 }
-.video-content{
+.video-content {
     padding-top: 29px;
     padding-left: 8.65px;
     position: absolute;
     z-index: 1;
 }
-.info{
+.info {
     min-width: 0;
     min-height: 0;
     align-items: flex-start;
@@ -463,14 +465,14 @@ nav.links a:hover {
     width: 176px;
     /* height: 12%; */
 }
-.image-content{
+.image-content {
     border-radius: 1000px;
     padding: 13px 7px 9px 8px;
 }
-.img{
+.img {
     border-radius: 15px;
 }
-.info-name{
+.info-name {
     min-width: 0;
     min-height: 0;
     align-items: flex-start;
@@ -481,24 +483,24 @@ nav.links a:hover {
     font-size: 12px;
 
 }
-.filter-name{
+.filter-name {
     color: #fff;
     font-size: .6875rem;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
-.name-position{
+.name-position {
     min-width: 0;
     min-height: 0;
     align-items: center;
     display: flex;
     flex-direction: row;
 }
-.creator-name{
+.creator-name {
     color: #fff;
     font-size: .5625rem;
 }
-.moldura{
+.moldura {
     align-items: stretch;
     display: flex;
     position: relative;
@@ -574,13 +576,15 @@ nav.links a:hover {
     }
 }
 
-.easter-egg{
-	position: relative;
-	margin: auto;
-	display: none;
+/* Easter egg*/
+.easter-egg {
+    position: relative;
+    margin: auto;
+    display: none;
     justify-content: space-around;
 }
 
+/* Terminal */
 .window-section {
     display: flex;
     min-height: 100vh;
@@ -589,90 +593,70 @@ nav.links a:hover {
     flex-direction: column;
     background-size: cover;
     overflow: hidden;
-  }
-  
-  .window {
+}
+.window {
     width: 550px;
     height: 350px;
     background-color: rgba(37, 37, 37, .85);
     border: 1px solid #c9c9c9;
     box-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
     transition: all ease-in-out .3s;
-  }
-  
-  @media screen and (max-width: 500px) {
-    .window {
-        width: 350px;
-        height: 250px;
-    }
-  }
-  
-  .window-header {
+}
+.window-header {
     background-color: #eee;
     height: 25px;
-  }
-  
-  .window-controls {
+}
+.window-controls {
     display: flex;
     height: 100%;
     justify-content: flex-end;
     align-items: center;
-  }
-  
-  .window-controls .control-item {
+}
+.window-controls .control-item {
     width: 25px;
     height: 25px;
     text-align: center;
     color: #333;
     transition: all ease-in .15s;
     cursor: pointer;
-  }
-  
-  .window-controls .control-item:hover {
+}
+.window-controls .control-item:hover {
     background-color: #ccc;
-  }
-  
-  .control-item.control-close {
+}
+.control-item.control-close {
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
-  }
-  
-  .control-item.control-close:hover {
+}
+.control-item.control-close:hover {
     background-color: #ec6060;
     color: #fff;
-  }
-  
-  .control-item.control-maximize {
+}
+.control-item.control-maximize {
     line-height: 19px;
-  }
-  
-  .control-item.control-minimize {
+}
+.control-item.control-minimize {
     line-height: 22px;
-  }
-  
-  .window-cursor {
+}
+.window-cursor {
     display: flex;
     margin: 5px;
-  }
-  
-  .i-cursor-indicator {
+}
+.i-cursor-indicator {
     color: #fff;
     font-size: 1em;
     font-family: 'Consolas', monospace;
     margin: 0 2px 0 5px;
-  }
-  
-  .i-cursor-underscore {
+}
+.i-cursor-underscore {
     width: 10px;
     height: 3px;
     background-color: #fff;
     align-self: flex-end;
     margin-right: 5px;
     animation: blink 1s steps(2, start) infinite;
-  }
-  
-  .window-input {
+}
+.window-input {
     background-color: inherit;
     border: none;
     outline: 0;
@@ -680,13 +664,11 @@ nav.links a:hover {
     text-shadow: 0 0 0 #fff;
     font-family: 'Consolas', monospace;
     flex: 1;
-  }
-  
-  .window-input:focus {
+}
+.window-input:focus {
     outline: none;
-  }
-  
-  .i-prompt {
+}
+.i-prompt {
     width: 62px;
     height: 62px;
     background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/terminal-48.png") no-repeat center;
@@ -695,20 +677,23 @@ nav.links a:hover {
     box-shadow: 0 3px 1px rgba(0, 0, 0, .25);
     cursor: pointer;
     transition: all ease-in-out .15s;
-  }
-  
-  .i-prompt:hover {
+}
+.i-prompt:hover {
     background-position: center 4px;
-  }
-  
-  .i-prompt.hidden {
+}
+.i-prompt.hidden {
     width: 0;
     height: 0;
     opacity: 0;
-  }
-  
-  @keyframes blink {
+}
+@media screen and (max-width: 500px) {
+    .window {
+        width: 350px;
+        height: 250px;
+    }
+}
+@keyframes blink {
     to {
         visibility: hidden;
     }
-  }
+}
