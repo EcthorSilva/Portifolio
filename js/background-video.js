@@ -33,7 +33,7 @@ if (D >= 1 && D <= 5) {
         console.log(source.src)
     }
     // Dormindo
-    else if (H >= 23 && H < 9) {
+    else { // if (H >= 18 && H <= 9)
         video.muted = true;
         video.autoplay = true;
         video.controls = false;
@@ -57,3 +57,5 @@ else {
     console.log("Playing");
     console.log(source.src)
 }
+
+//aaaa
