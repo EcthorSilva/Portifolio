@@ -1,9 +1,10 @@
 # Portfólio
+###### Este repositório é o meu portfólio de desenvolvedor web, que estou desenvolvendo para demonstrar minhas habilidades em front-end e back-end. 
+## Descrição
 
-###### Já faz algum tempo que ando querendo atualizar meu portifolio de desenvolvedor web, por este motivo estou iniciando este novo projeto.
+Este repositório serve como um registro de meu progresso e uma amostra de minhas habilidades como desenvolvedor web. Também é uma forma de compartilhar meus conhecimentos com outras pessoas que possam estar interessadas em aprender mais sobre desenvolvimento web.
 
-Ainda estou construindo este portifolio, aos poucos estou adicionando coisas e corrigindo alguns aspectos da resposnividade deste site em telas menores.
-
+Fique à vontade para explorar o conteúdo deste repositório e entrar em contato comigo caso tenha alguma dúvida ou sugestão. Obrigado por visitar!
 ### Updates
 
 Fiz as seguintes alterações no arquivo `background-video.js`:
