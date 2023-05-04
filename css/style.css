@@ -194,14 +194,11 @@ a {
     z-index: 1;
     margin: auto;
     width: 100%;
-    position: fixed;
-    /*
-    position: fixed; 
-    z-index: 1;
-    background: rgb(255 255 255 / 5%);
+    /* position: fixed; */
+    
+    /* background: rgb(255 255 255 / 5%);
     border-radius: 4px;
-    backdrop-filter: blur(10px);
-    */
+    backdrop-filter: blur(10px); */
 }
 .header .inner {
     display: flex;
@@ -698,4 +695,10 @@ nav.links a:hover {
     to {
         visibility: hidden;
     }
+}
+
+/* Card Repo */
+.repo{
+    mix-blend-mode: screen;
+    align-self: center;
 }
