@@ -13,3 +13,5 @@ Fiz as seguintes alterações no arquivo `background-video.js`:
 - Após terminar o modulo de JQuery do Curso de Javascript da EBAC criei um script para corrigir o problema da responsividade do video de background.  
 
 - Criei um script para atualizar o ano que esta na introdução da pagina.
+
+- Fiz algumas correções no header e adicionei uma sessão para o meu projeto "From the Ashes".
